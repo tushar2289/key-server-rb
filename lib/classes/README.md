@@ -1,6 +1,6 @@
 ## Classes
 
-To be viewed using (Mermaid)[https://mermaid-js.github.io/mermaid-live-editor/]
+To be viewed using [Mermaid](https://mermaid-js.github.io/mermaid-live-editor/)
 
 ```mermaid
 classDiagram
@@ -26,7 +26,7 @@ classDiagram
 	KeyBase: +getAnUnblockedKey(key)
 ```
 
-To view this better in github.com install (Mermaid diagrams)[Mermaid%20diagrams%20%E2%87%92%20https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil?hl=en] extension on Chrome
+To view this better in github.com install [Mermaid diagrams](https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil?hl=en) extension
 
 ### Key
 
