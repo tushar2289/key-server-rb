@@ -26,6 +26,8 @@ classDiagram
 	KeyBase: +getAnUnblockedKey(key)
 ```
 
+To view this better in github.com install [Mermaid diagrams](Mermaid%20diagrams%20%E2%87%92%20https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil?hl=en) extension on Chrome
+
 ### Key
 
 This class contains the details of every single Key generated.
