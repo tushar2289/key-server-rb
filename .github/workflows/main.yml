@@ -20,11 +20,15 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Install ruby
-      run: \curl -sSL https://get.rvm.io | bash -s stable --ruby
+    - name: Set up Ruby 2.7
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.7.0
 
     - name: Run bundle installer
-      run: bundle install
+      run: |
+        gem install bundler
+        bundle install
       
     - name: Run tests
       run: rspec
