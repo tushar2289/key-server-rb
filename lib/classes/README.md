@@ -10,20 +10,17 @@ classDiagram
 	Key : +DateTime validity_started_on
 	Key : +int refresh_count
 
-	Key : +toggleBlocking()
 	Key : +refresh()
 
 	class KeyBase
 	KeyBase: +Hash unblocked_keys
 	KeyBase: +Hash blocked_keys
-	KeyBase: +Hash expired_keys
 
-	KeyBase: +generate()
-	KeyBase: +blockKey(key)
-	KeyBase: +unblockKey(key)
-	KeyBase: +expireKey(key)
-	KeyBase: +deleteKey(key)
-	KeyBase: +getAnUnblockedKey(key)
+	KeyBase: +generateKey()
+	KeyBase: +getAvailableKey()
+	KeyBase: +unblockKey(id)
+	KeyBase: +deleteKey(id)
+	KeyBase: +keepAlive(id)
 ```
 
 To view this better in github.com install [Mermaid diagrams](https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil?hl=en) extension
@@ -34,4 +31,4 @@ This class contains the details of every single Key generated.
 
 ### KeyBase
 
-This class manages all the keys and has the list of blocked, unblocked and expired keys
+This class manages all the keys and has the list of blocked and unblocked keys
