@@ -9,6 +9,7 @@ gem "thin"
 gem "json"
 gem "rspec"
 gem 'rack-test'
+gem 'whenever'
 
 # For reloading after save, used while development
 gem "sinatra-reloader"

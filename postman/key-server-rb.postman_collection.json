@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "e0a435d6-59e4-4321-b365-6103ab90fe95",
+		"name": "key-server-rb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generate key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d0080c73-9a1b-415b-a2b9-0d79ff955cd5",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/generate-key",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"generate-key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get available key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/get-available-key",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"get-available-key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unblock key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/unblock-key/5c39d750-53ec-47ed-ac5c-3db9cecdbb92",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"unblock-key",
+						"5c39d750-53ec-47ed-ac5c-3db9cecdbb92"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Keep alive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/keep-alive/5c39d750-53ec-47ed-ac5c-3db9cecdbb92",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"keep-alive",
+						"5c39d750-53ec-47ed-ac5c-3db9cecdbb92"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/delete-key/5c39d750-53ec-47ed-ac5c-3db9cecdbb92",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete-key",
+						"5c39d750-53ec-47ed-ac5c-3db9cecdbb92"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

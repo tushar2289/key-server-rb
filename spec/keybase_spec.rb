@@ -68,4 +68,18 @@ describe KeyBase do
     response = subject.keepAlive("tushar")
     expect(response).to eq("Key not available")
   end
+
+  it "should unblock all the keys" do
+    subject.generateKey
+    key = subject.getAvailableKey
+
+    subject.unblockAllBlockedKeys
+    expect(subject.blocked_keys.keys.length).to eq(0)
+  end
+
+  it "should not delete keys less than 5 minutes old" do
+    subject.generateKey
+    subject.deleteAllUnusedKeys
+    expect(subject.unblocked_keys.keys.length).to eq(1)
+  end
 end
