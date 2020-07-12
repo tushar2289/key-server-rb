@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.18.1)
+    chronic (0.10.2)
     daemons (1.3.1)
     diff-lcs (1.4.4)
     eventmachine (1.2.7)
@@ -47,6 +48,8 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     tilt (2.0.10)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
@@ -58,6 +61,7 @@ DEPENDENCIES
   sinatra
   sinatra-reloader
   thin
+  whenever
 
 BUNDLED WITH
    2.1.2

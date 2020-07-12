@@ -41,12 +41,44 @@ This API will unblock the key sent in the `:key` parameter and if not found will
 E5 => `/keep-alive/:key`
 This API will unblock the key sent in the `:key` parameter and if not found will return 404.
 
+To unblock all blocked keys, run the below command:
+
+```
+rake unblock_all_blocked_keys
+```
+
+To delete all unused keys, run the below command:
+
+```
+rake delete_unused_keys
+```
+
+Postman APIs can be imported from the collection inside the `postman` directory
+
 ## TESTS
 
 Run the below command to run all the test cases
 
 ```
 rspec
+```
+
+or
+
+```
+rake
+```
+
+## CRON START
+
+```
+whenever --update-crontab API-KEYS
+```
+
+## CRON STOP
+
+```
+whenever -c API-KEYS
 ```
 
 ## Commit rules
