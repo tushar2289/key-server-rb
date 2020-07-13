@@ -53,7 +53,7 @@ To delete all unused keys, run the below command:
 rake delete_unused_keys
 ```
 
-Postman APIs can be imported from the collection inside the `postman` directory
+> Postman APIs can be imported from the collection inside the `postman` directory
 
 ## TESTS
 

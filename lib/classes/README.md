@@ -16,8 +16,8 @@ classDiagram
 	KeyBase: +Hash unblocked_keys
 	KeyBase: +Hash blocked_keys
 
-	KeyBase: +generateKey()
-	KeyBase: +getAvailableKey()
+	KeyBase: +generateKey
+	KeyBase: +getAvailableKey
 	KeyBase: +unblockKey(id)
 	KeyBase: +deleteKey(id)
 	KeyBase: +keepAlive(id)
